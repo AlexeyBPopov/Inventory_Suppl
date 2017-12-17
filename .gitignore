@@ -285,4 +285,8 @@ __pycache__/
 *.btp.cs
 *.btm.cs
 *.odx.cs
+<<<<<<< .merge_file_a01116
 *.xsd.cs
+=======
+*.xsd.cs
+>>>>>>> .merge_file_a06648
