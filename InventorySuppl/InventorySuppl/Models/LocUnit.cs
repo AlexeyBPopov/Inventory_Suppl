@@ -7,8 +7,10 @@ namespace InventorySuppl.Models
 {
     public class LocUnit
     {
-        public int ID { get; set; }
-        public int UnitNum { get; set; }
-        public List<Location> Locations { get; set; }
+        public virtual int ID { get; set; }
+        public virtual short LocAreaId { get; set; }
+        public virtual int UnitNum { get; set; }
+        public virtual LocArea LocArea { get; set; }
+        public virtual List<Location> Locations { get; set; }
     }
 }

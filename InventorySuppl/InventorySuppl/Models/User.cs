@@ -8,9 +8,11 @@ namespace InventorySuppl.Models
 {
     public class UserP
     {
-        public Int16 ID { get; set; }
-        public string Name { get; set; }
-        public List<Operation> Operations { get; set; }
+        public virtual Int16 ID { get; set; }
+        public virtual string Name { get; set; }
+        public virtual byte TipeOfRightsId { get; set; }
+        public virtual List<Operation> Operations { get; set; }
+        public virtual TypeOfRight TypeOfRight { get; set; }
     }
 
     public class UserPMap: EntityTypeConfiguration<UserP>

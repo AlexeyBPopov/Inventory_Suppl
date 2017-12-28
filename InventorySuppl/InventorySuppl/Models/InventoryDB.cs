@@ -10,7 +10,7 @@ namespace InventorySuppl.Models
     {
         public InventoryDB() : base("name=InventoryDB")
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<InventoryDB>);
+    //        Database.SetInitializer(new DropCreateDatabaseIfModelChanges<InventoryDB>());
         }
         public DbSet<Manufacturer> Manufacturers { get; set; }
         public DbSet<typeOfItems>  TypesOfItems { get; set; }
@@ -31,5 +31,5 @@ namespace InventorySuppl.Models
             modelBuilder.Configurations.Add(new VendorMap());
         }
     }
-    }
+    
 }

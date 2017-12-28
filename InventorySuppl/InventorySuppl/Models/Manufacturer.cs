@@ -8,10 +8,10 @@ namespace InventorySuppl.Models
 {
     public class Manufacturer
     {
-        public Int16 ID { get; set; }
-        public string ManufacturerName { get; set; }
-        public string ABBR { get; set; }
-        public List<Product> Products { get; set; }
+        public virtual Int16 ID { get; set; }
+        public virtual string ManufacturerName { get; set; }
+        public virtual string ABBR { get; set; }
+        public virtual List<Product> Products { get; set; }
 
     }
 

@@ -8,9 +8,9 @@ namespace InventorySuppl.Models
 {
     public class LocArea
     {
-        public Int16 ID { get; set; }
-        public string AreaName { get; set; }
-        public List<LocUnit> LocUnits { get; set; }
+        public virtual Int16 ID { get; set; }
+        public virtual string AreaName { get; set; }
+        public virtual List<LocUnit> LocUnits { get; set; }
     }
 
     public class LocAreaMap: EntityTypeConfiguration<LocArea>

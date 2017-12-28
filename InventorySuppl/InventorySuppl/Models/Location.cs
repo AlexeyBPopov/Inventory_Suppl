@@ -7,8 +7,10 @@ namespace InventorySuppl.Models
 {
     public class Location
     {
-        public int ID { get; set; }
-        public Int16 ShelfNomber { get; set; }
-        public List<Operation> Operations { get; set; }
+        public virtual int ID { get; set; }
+        public virtual int UnitID { get; set; }
+        public virtual Int16 ShelfNomber { get; set; }
+        public virtual List<Operation> Operations { get; set; }
+        public virtual LocUnit LocUnit { get; set; }
     }
 }

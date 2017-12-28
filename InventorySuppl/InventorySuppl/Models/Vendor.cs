@@ -8,10 +8,10 @@ namespace InventorySuppl.Models
 {
     public class Vendor
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string UID { get; set; }
-        public List<Operation> Operations { get; set; }
+        public virtual int ID { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string UID { get; set; }
+        public virtual List<Operation> Operations { get; set; }
     }
 
     public class VendorMap: EntityTypeConfiguration<Vendor>

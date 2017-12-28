@@ -8,9 +8,9 @@ namespace InventorySuppl.Models
 {
     public class typeOfItems
     {
-        public Int16 ID { get; set; }
-        public string Name { get; set; }
-        public List<Product> Products { get; set; }
+        public virtual Int16 ID { get; set; }
+        public virtual string Name { get; set; }
+        public virtual List<Product> Products { get; set; }
     }
 
     public class typeOfItemsMap: EntityTypeConfiguration<typeOfItems>

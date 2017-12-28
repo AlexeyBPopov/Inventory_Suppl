@@ -7,10 +7,14 @@ namespace InventorySuppl.Models
 {
     public class Product
     {
-        public int ID { get; set; }
-        public string ProductName { get; set; }
-        public string UID { get; set; }
-        public float Quantity { get; set; }
-        public List<Operation> Operations { get; set; }
+        public virtual int ID { get; set; }
+        public virtual string ProductName { get; set; }
+        public virtual string UID { get; set; }
+        public virtual float Quantity { get; set; }
+        public virtual Int16 TypeOfItemsID { get; set; }
+        public virtual Int16 ManufacturerID { get; set; }
+        public virtual typeOfItems TypeOfItems { get; set; }
+        public virtual Manufacturer Manufacturer { get; set; }
+        public virtual List<Operation> Operations { get; set; }
     }
 }
